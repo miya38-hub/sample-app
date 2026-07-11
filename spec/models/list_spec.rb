@@ -1,0 +1,8 @@
+#frozen_string_literal: true
+require "rails_helper"
+
+describe "モデルのテスト" do
+  it "有効な投稿内容な場合は保存されてるか" do
+    expect(FactoryBot.build(:book)).to be_valid
+  end
+end
